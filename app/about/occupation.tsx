@@ -13,7 +13,7 @@ export default function Occupation() {
           height={130}
           width={130}
           src="/static/images/avatar.jpeg"
-          className="rounded-full object-scale-down grayscale"
+          className="rounded-full object-scale-down"
         />
       </div>
     </div>
