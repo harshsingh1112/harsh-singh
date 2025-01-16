@@ -11,7 +11,7 @@ const { content } = readMDXFile(contentPath);
 
 export const metadata = {
   title: 'About',
-  description: 'About Dale Larroder',
+  description: 'About Harsh Singh',
 };
 
 export default function Page() {
