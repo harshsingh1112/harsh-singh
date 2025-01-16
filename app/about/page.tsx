@@ -19,9 +19,6 @@ export default function Page() {
       <Occupation />
       <CustomMDX source={content} />
       <GithubContributions />
-      <Suspense fallback="loading..">
-        <TopTracks />
-      </Suspense>
     </Fragment>
   );
 }
