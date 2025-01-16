@@ -1,9 +1,8 @@
 import { cache } from 'react';
 
-const client_id = process.env.5e4fb1101d4e415d818af8e39a392066 || '';
-const client_secret = process.env.2bb2c2ea1c624bb7b68703d720b4cca3 || '';
-const refresh_token = process.env.AQDXAuoTJQzriwX_IrnRhsnK60GcvuqA9gt_bjpF6BJhCyOEGK1_e7WB4GGj6UGpfvtMZfkFdUozbBwLJujkDop7H46-qsUhOHUukLCs2Ve1DoeTE8z7Room-M1yGqZcmnU
- || '';
+const client_id = process.env.SPOTIFY_CLIENT_ID || '';
+const client_secret = process.env.SPOTIFY_CLIENT_SECRET || '';
+const refresh_token = process.env.SPOTIFY_REFRESH_TOKEN || '';
 
 const basic = Buffer.from(`${client_id}:${client_secret}`).toString('base64');
 const NOW_PLAYING_ENDPOINT = `https://api.spotify.com/v1/me/player/currently-playing`;
@@ -11,77 +10,43 @@ const TOP_TRACKS_ENDPOINT = `https://api.spotify.com/v1/me/top/tracks?time_range
 const TOKEN_ENDPOINT = `https://accounts.spotify.com/api/token`;
 
 const getAccessToken = async () => {
-  try {
-    const response = await fetch(TOKEN_ENDPOINT, {
-      method: 'POST',
-      headers: {
-        Authorization: `Basic ${basic}`,
-        'Content-Type': 'application/x-www-form-urlencoded',
-      },
-      body: new URLSearchParams({
-        grant_type: 'refresh_token',
-        refresh_token,
-      }),
-    });
+  const response = await fetch(TOKEN_ENDPOINT, {
+    method: 'POST',
+    headers: {
+      Authorization: `Basic ${basic}`,
+      'Content-Type': 'application/x-www-form-urlencoded',
+    },
+    body: new URLSearchParams({
+      grant_type: 'refresh_token',
+      refresh_token,
+    }),
+    next: {
+      revalidate: 3600,
+    },
+  });
 
-    if (!response.ok) {
-      console.error('Failed to fetch access token:', response);
-      throw new Error('Failed to get access token');
-    }
-
-    const data = await response.json();
-    console.log('Access token response:', data);  // Log the response for debugging
-    return data;
-  } catch (error) {
-    console.error('Error fetching access token:', error);
-    throw error;
-  }
+  return response.json();
 };
 
 export const getNowPlaying = cache(async () => {
-  try {
-    const { access_token } = await getAccessToken();
-    console.log('Access token used for request:', access_token);  // Log the access token for debugging
+  const { access_token } = await getAccessToken();
 
-    const nowPlayingResponse = await fetch(NOW_PLAYING_ENDPOINT, {
-      headers: {
-        Authorization: `Bearer ${access_token}`,
-      },
-      next: {
-        revalidate: 30,
-      },
-    });
-
-    if (!nowPlayingResponse.ok) {
-      console.error('Failed to fetch now playing data:', nowPlayingResponse);
-      throw new Error('Failed to fetch now playing data');
-    }
-
-    return nowPlayingResponse.json();
-  } catch (error) {
-    console.error('Error fetching now playing:', error);
-    throw error;
-  }
+  return fetch(NOW_PLAYING_ENDPOINT, {
+    headers: {
+      Authorization: `Bearer ${access_token}`,
+    },
+    next: {
+      revalidate: 30,
+    },
+  });
 });
 
 export const getTopTracks = cache(async () => {
-  try {
-    const { access_token } = await getAccessToken();
+  const { access_token } = await getAccessToken();
 
-    const topTracksResponse = await fetch(TOP_TRACKS_ENDPOINT, {
-      headers: {
-        Authorization: `Bearer ${access_token}`,
-      },
-    });
-
-    if (!topTracksResponse.ok) {
-      console.error('Failed to fetch top tracks:', topTracksResponse);
-      throw new Error('Failed to fetch top tracks');
-    }
-
-    return topTracksResponse.json();
-  } catch (error) {
-    console.error('Error fetching top tracks:', error);
-    throw error;
-  }
+  return fetch(TOP_TRACKS_ENDPOINT, {
+    headers: {
+      Authorization: `Bearer ${access_token}`,
+    },
+  });
 });
