@@ -6,7 +6,7 @@ export default function Contact() {
           Let&apos;s make something <br></br> great together
         </span>
         <span className="text-3xl md:text-6xl xl:text-8xl text-end">
-          hi@<span className="underline">https://harsh-singh.vercel.app/</span>
+          <span className="underline">harshsingh34418@gmail.com</span>
         </span>
       </div>
     </section>
