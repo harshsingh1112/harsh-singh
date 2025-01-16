@@ -5,6 +5,11 @@ import { Song, TrackInfo } from './types';
 async function fetchTopTracks(): Promise<Song[] | null> {
   try {
     const response = await getTopTracks();
+
+    if (!response.ok) {
+      throw new Error('Failed to fetch top tracks');
+    }
+
     const { items } = await response.json();
 
     const tracks = items.slice(0, 5).map((track: TrackInfo) => ({
@@ -16,18 +21,21 @@ async function fetchTopTracks(): Promise<Song[] | null> {
     return tracks;
   } catch (e) {
     if (e instanceof Error) {
-      console.error(e.message);
+      console.error('Error fetching top tracks:', e.message);
     }
+    return null; // Ensure the function returns null in case of an error
   }
-
-  return null;
 }
 
 export default async function TopTracks() {
   const topTracks = await fetchTopTracks();
 
   if (!topTracks) {
-    return null;
+    return (
+      <div className="py-7 text-center text-gray-500 dark:text-gray-300">
+        Unable to fetch top tracks
+      </div>
+    );
   }
 
   return (
