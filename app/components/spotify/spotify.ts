@@ -25,10 +25,13 @@ const getAccessToken = async () => {
     });
 
     if (!response.ok) {
+      console.error('Failed to fetch access token:', response);
       throw new Error('Failed to get access token');
     }
 
-    return response.json();
+    const data = await response.json();
+    console.log('Access token response:', data);  // Log the response for debugging
+    return data;
   } catch (error) {
     console.error('Error fetching access token:', error);
     throw error;
@@ -38,6 +41,8 @@ const getAccessToken = async () => {
 export const getNowPlaying = cache(async () => {
   try {
     const { access_token } = await getAccessToken();
+    console.log('Access token used for request:', access_token);  // Log the access token for debugging
+
     const nowPlayingResponse = await fetch(NOW_PLAYING_ENDPOINT, {
       headers: {
         Authorization: `Bearer ${access_token}`,
@@ -48,6 +53,7 @@ export const getNowPlaying = cache(async () => {
     });
 
     if (!nowPlayingResponse.ok) {
+      console.error('Failed to fetch now playing data:', nowPlayingResponse);
       throw new Error('Failed to fetch now playing data');
     }
 
@@ -61,6 +67,7 @@ export const getNowPlaying = cache(async () => {
 export const getTopTracks = cache(async () => {
   try {
     const { access_token } = await getAccessToken();
+
     const topTracksResponse = await fetch(TOP_TRACKS_ENDPOINT, {
       headers: {
         Authorization: `Bearer ${access_token}`,
@@ -68,6 +75,7 @@ export const getTopTracks = cache(async () => {
     });
 
     if (!topTracksResponse.ok) {
+      console.error('Failed to fetch top tracks:', topTracksResponse);
       throw new Error('Failed to fetch top tracks');
     }
 
