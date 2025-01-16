@@ -1,7 +1,6 @@
 import Link from 'next/link';
-import { Suspense } from 'react';
 import { AiFillLinkedin } from 'react-icons/ai';
-import { FaGithub, FaSteam } from 'react-icons/fa';
+import { FaGithub } from 'react-icons/fa';
 import { FaXTwitter } from 'react-icons/fa6';
 import { siteMetadata } from '../metadata';
 import SectionContainer from './section-container';
