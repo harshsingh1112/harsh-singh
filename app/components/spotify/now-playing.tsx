@@ -7,7 +7,7 @@ async function fetchNowPlaying(): Promise<NowPlayingSong | null> {
     const response = await getNowPlaying();
 
     if (response.status === 204 || response.status > 400) {
-      return null;
+      return null; // No track playing or error occurred
     }
 
     const song = await response.json();
@@ -28,16 +28,16 @@ async function fetchNowPlaying(): Promise<NowPlayingSong | null> {
     };
   } catch (e) {
     if (e instanceof Error) {
-      console.error(e.message);
+      console.error('Error fetching now playing:', e.message);
     }
+    return null; // Return null if an error occurs
   }
-
-  return null;
 }
 
 export default async function NowPlaying() {
   const nowPlaying = await fetchNowPlaying();
 
+  // Handle case when no track is playing
   if (!nowPlaying?.songUrl || !nowPlaying.title || !nowPlaying.artist) {
     return (
       <div className="flex items-center justify-center space-x-2 text-sm sm:justify-start sm:text-base">
