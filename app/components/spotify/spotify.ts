@@ -2,7 +2,7 @@ import { cache } from 'react';
 
 const client_id = process.env.5e4fb1101d4e415d818af8e39a392066 || '';
 const client_secret = process.env.2bb2c2ea1c624bb7b68703d720b4cca3 || '';
-const refresh_token = process.env.AQDXAuoTJQzriwX_IrnRhsnK60GcvuqA9gt_bjpF6BJhCyOEGK1_e7WB4GGj6UGpfvtMZfkFdUozbBwLJujkDop7H46-qsUhOHUukLCs2Ve1DoeTE8z7Room-M1yGqZcmnU || '';
+const refresh_token = process.env.AQDXAuoTJQzriwX_IrnRhsnK60GcvuqA9gt_bjpF6BJhCyOEGK1_e7WB4GGj6UGpfvtMZfkFdUozbBwLJujkDop7H46-qsUhOHUukLCs2Ve1DoeTE8z7Room-M1yGqZcmnU|| '';
 
 const basic = Buffer.from(`${client_id}:${client_secret}`).toString('base64');
 const NOW_PLAYING_ENDPOINT = `https://api.spotify.com/v1/me/player/currently-playing`;
