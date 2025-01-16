@@ -1,10 +1,9 @@
 import Link from 'next/link';
 import { Suspense } from 'react';
 import { AiFillLinkedin } from 'react-icons/ai';
-import { FaGithub, FaSpotify, FaSteam } from 'react-icons/fa';
+import { FaGithub, FaSteam } from 'react-icons/fa';
 import { FaXTwitter } from 'react-icons/fa6';
 import { siteMetadata } from '../metadata';
-import NowPlaying from '../spotify/now-playing';
 import SectionContainer from './section-container';
 
 export default function Footer() {
@@ -47,16 +46,6 @@ export default function Footer() {
                   aria-label="twitter"
                 >
                   <FaXTwitter className="sm:text-lg" />
-                </a>
-              </li>
-              <li>
-                <a
-                  href={siteMetadata.spotify}
-                  target="_blank"
-                  rel="noreferrer"
-                  aria-label="spotify"
-                >
-                  <FaSpotify className="sm:text-lg" />
                 </a>
               </li>
             </ul>
