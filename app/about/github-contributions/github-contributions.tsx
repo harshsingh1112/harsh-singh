@@ -3,7 +3,7 @@ import { Activity } from 'react-activity-calendar';
 import Calendar from './calendar';
 
 export default async function GithubContributions() {
-  const contributions = await Contributions.forUser('dlarroder');
+  const contributions = await Contributions.forUser('harshsingh1112');
   const days = contributions.getDays();
 
   const data: Activity[] = days.map((day) => {
