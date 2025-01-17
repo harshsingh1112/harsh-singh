@@ -13,7 +13,7 @@ export const workTiles: WorkTile[] = [
     description: `Here are things`,
     title: `I've worked on`,
     image: {
-      src: 'public/static/images/project combined.PNG',
+      src: 'public/static/images/project combined.webp',
       width: 600,
       height: 770,
     },
@@ -22,7 +22,7 @@ export const workTiles: WorkTile[] = [
     description: 'I built',
     title: 'House Price Prediction',
     image: {
-      src: 'public/static/images/house.jpg',
+      src: 'public/static/images/house.webp',
       width: 600,
       height: 554,
     },
@@ -31,7 +31,7 @@ export const workTiles: WorkTile[] = [
     description: `I created`,
     title: 'Credit Card Fraud Detection',
     image: {
-      src: 'public/static/images/creditcardfraud.jpg',
+      src: 'public/static/images/creditcardfraud.webp',
       width: 600,
       height: 717,
     },
@@ -40,7 +40,7 @@ export const workTiles: WorkTile[] = [
     description: `I built`,
     title: 'Birdie Bounce',
     image: {
-      src: 'public/static/images/flappy.jpg',
+      src: 'public/static/images/flappy.webp',
       width: 600,
       height: 717,
     },
