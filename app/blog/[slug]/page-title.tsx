@@ -1,13 +1,3 @@
-import { ReactNode } from 'react';
-
-interface Props {
-  children: ReactNode;
-}
-
-export default function PageTitle({ children }: Props) {
-  return (
-    <h1 className="text-2xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10">
-      {children}
-    </h1>
-  );
+export default function PageTitle({ title }: { title: string }) {
+  return <h1 className="text-3xl font-bold">{title}</h1>;
 }
