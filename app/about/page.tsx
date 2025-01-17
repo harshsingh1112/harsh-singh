@@ -21,7 +21,6 @@ export default function Page() {
       <CustomMDX source={content} />
       <GithubContributions />
       <Resume />
-      </div>
     </Fragment>
   );
 }
