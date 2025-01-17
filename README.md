@@ -49,8 +49,6 @@ SPOTIFY_CLIENT_ID=<Your env>
 bun run dev
 ```
 
-- https://v1.dalelarroder.com/
-
 ## Licence
 
-[MIT](https://github.com/dlarroder/dalelarroder/blob/master/LICENSE) © [Dale Larroder](https://www.dalelarroder.com)
+[MIT](LICENSE) © [Harsh Singh](https://harsh-singh.vercel.app/)
