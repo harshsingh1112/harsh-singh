@@ -1,6 +1,6 @@
-import { Fragment, ReactNode } from 'react';
-import MainLayout from '../../components/layouts/main-layout';
-import ScrollProgressBar from './scroll-progress-bar';
+//import { Fragment, ReactNode } from 'react';
+//import MainLayout from '../../components/layouts/main-layout';
+//import ScrollProgressBar from './scroll-progress-bar';
 
 export default function Layout({ children }: { children: React.ReactNode }) {
   return (
