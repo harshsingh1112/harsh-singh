@@ -15,8 +15,12 @@ export const metadata = {
 export default function Page() {
   return (
     <Fragment>
-      <UsesTitle />
-      <CustomMDX source={content} />
+      <div className="flex flex-col items-center justify-center min-h-screen text-center">
+        <UsesTitle />
+        <div className="prose">
+          <CustomMDX source={content} />
+        </div>
+      </div>
     </Fragment>
   );
 }
