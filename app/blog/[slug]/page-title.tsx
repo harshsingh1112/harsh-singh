@@ -1,8 +1,10 @@
 import fs from 'fs';
-import { compileMDX } from 'next-mdx-remote/rsc';
 import path from 'path';
-import rehypePrettyCode from 'rehype-pretty-code';
-import { components } from '../components/mdx';
+
+// Removed unused imports
+// import { compileMDX } from 'next-mdx-remote/rsc';
+// import rehypePrettyCode from 'rehype-pretty-code';
+// import { components } from '../components/mdx';
 
 export const certifications = [
   {
@@ -250,9 +252,8 @@ export const certifications = [
   },
 ];
 
-export interface BlogPost { /* Rest of the code remains unchanged */ }
 
-export interface BlogPost {
+export interface BlogPost { // Keep this interface only if needed later
   metadata: Metadata;
   slug: string;
   content: string;
