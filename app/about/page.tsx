@@ -19,6 +19,17 @@ export default function Page() {
       <Occupation />
       <CustomMDX source={content} />
       <GithubContributions />
+       {/* Resume Download Button */}
+      <div style={{ textAlign: 'center', marginTop: '2rem' }}>
+        <a
+          href="https://drive.google.com/file/d/1m_M-OAivyVGhphPNLTImkP2oFi6F75fm/view?usp=sharing"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="button"
+        >
+          Download Resume
+        </a>
+      </div>
     </Fragment>
   );
 }
