@@ -19,8 +19,8 @@ export default function Page() {
     <Fragment>
       <Occupation />
       <CustomMDX source={content} />
-      <GithubContributions />
       <Resume />
+      <GithubContributions />
     </Fragment>
   );
 }
