@@ -4,7 +4,7 @@ import { readMDXFile } from '../blog/utils';
 import { CustomMDX } from '../components/mdx';
 import GithubContributions from './github-contributions/github-contributions';
 import Occupation from './occupation';
-import Resume from './app/about/resume.tsx';
+import Resume from 'app/about/resume.tsx';
 
 const contentPath = path.join(process.cwd(), 'app', 'about', 'content.mdx');
 const { content } = readMDXFile(contentPath);
