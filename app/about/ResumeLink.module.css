@@ -3,7 +3,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;  /* Centers vertically within the full height of the viewport */
+  height: 17vh;  /* Centers vertically within the full height of the viewport */
 }
 
 /* Style the link like a button with underline */
