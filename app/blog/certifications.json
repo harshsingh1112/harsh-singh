@@ -1,0 +1,226 @@
+[
+  {
+    "name": "Artificial Intelligence Fundamentals",
+    "company": "IBM",
+    "issuedOn": "January 2025",
+    "skills": ["Artificial Intelligence (AI)", "Machine Learning", "Deep Learning"],
+    "link": "https://www.credly.com/badges/96b85431-1c59-4856-bcc1-6e27fea97914/linked_in_profile"
+  },
+  {
+    "name": "Data Analytics Essentials",
+    "company": "Cisco",
+    "issuedOn": "January 2025",
+    "skills": ["Data Analysis", "Tableau", "SQL", "Microsoft Excel", "Data Visualization"],
+    "link": "https://www.credly.com/badges/35bfb421-6412-43f6-9812-75fbb039581f/linked_in_profile"
+  },
+  {
+    "name": "Introduction to Tableau",
+    "company": "Simplilearn",
+    "issuedOn": "January 2025",
+    "skills": ["Tableau", "Data Analysis"],
+    "link": ""
+  },
+  {
+    "name": "Advanced Software Engineering Job Simulation",
+    "company": "Walmart USA (Forage)",
+    "issuedOn": "January 2025",
+    "skills": ["Java", "Python", "SQL"],
+    "link": ""
+  },
+  {
+    "name": "Solutions Architecture Job Simulation",
+    "company": "AWS APAC (Forage)",
+    "issuedOn": "December 2024",
+    "skills": [],
+    "link": ""
+  },
+  {
+    "name": "Prompt Engineering",
+    "company": "DeepLearning.AI",
+    "issuedOn": "December 2024",
+    "skills": ["Prompt Engineering", "AI", "Chatbot Development"],
+    "link": ""
+  },
+  {
+    "name": "Responsive Web Design",
+    "company": "freeCodeCamp",
+    "issuedOn": "December 2024",
+    "skills": ["HTML", "CSS", "Web Development", "Front-End Development"],
+    "link": ""
+  },
+  {
+    "name": "AWS Knowledge: Cloud Essentials",
+    "company": "AWS",
+    "issuedOn": "June 2024",
+    "skills": ["Cloud Computing"],
+    "link": ""
+  },
+  {
+    "name": "Artificial Intelligence Job Simulation",
+    "company": "Forage",
+    "issuedOn": "June 2024",
+    "skills": ["Communication", "Data Analysis", "Data Modeling", "Machine Learning", "Data Visualization", "Model Interpretation", "Problem Solving", "Python"],
+    "link": ""
+  },
+  {
+    "name": "Excel for Data & Analytics",
+    "company": "Chegg Inc.",
+    "issuedOn": "June 2024",
+    "skills": ["Microsoft Excel", "Data Analysis"],
+    "link": ""
+  },
+  {
+    "name": "Generative AI Fundamentals",
+    "company": "Google",
+    "issuedOn": "June 2024",
+    "skills": ["Artificial Intelligence"],
+    "link": ""
+  },
+  {
+    "name": "Introduction to Generative AI",
+    "company": "Google",
+    "issuedOn": "June 2024",
+    "skills": ["Artificial Intelligence"],
+    "link": ""
+  },
+  {
+    "name": "Introduction to Large Language Models",
+    "company": "Google",
+    "issuedOn": "June 2024",
+    "skills": ["Artificial Intelligence"],
+    "link": ""
+  },
+  {
+    "name": "Software Engineering Job Simulation",
+    "company": "J.P. Morgan (Forage)",
+    "issuedOn": "June 2024",
+    "skills": ["Python"],
+    "link": ""
+  },
+  {
+    "name": "Introduction to DBMS and SQL Fundamentals",
+    "company": "Udemy",
+    "issuedOn": "April 2024",
+    "skills": ["DBMS", "SQL"],
+    "link": ""
+  },
+  {
+    "name": "Introduction to IoT",
+    "company": "Cisco",
+    "issuedOn": "April 2024",
+    "skills": ["IoT Basics"],
+    "link": ""
+  },
+  {
+    "name": "AWS Academy Machine Learning Foundations",
+    "company": "AWS",
+    "issuedOn": "February 2024",
+    "skills": ["Machine Learning", "AI"],
+    "link": ""
+  },
+  {
+    "name": "DBMS Course",
+    "company": "Scaler",
+    "issuedOn": "January 2024",
+    "skills": ["DBMS"],
+    "link": ""
+  },
+  {
+    "name": "Cyber Forensics",
+    "company": "Great Learning",
+    "issuedOn": "December 2023",
+    "skills": ["Cybersecurity"],
+    "link": ""
+  },
+  {
+    "name": "Introduction to Cryptography",
+    "company": "Great Learning",
+    "issuedOn": "December 2023",
+    "skills": ["Cybersecurity", "Cryptography"],
+    "link": ""
+  },
+  {
+    "name": "Introduction to Web Application Attacks",
+    "company": "Great Learning",
+    "issuedOn": "December 2023",
+    "skills": ["Cybersecurity"],
+    "link": ""
+  },
+  {
+    "name": "Linux Tutorial",
+    "company": "Great Learning",
+    "issuedOn": "December 2023",
+    "skills": ["Cybersecurity", "Linux Basics", "Kali Linux"],
+    "link": ""
+  },
+  {
+    "name": "Social Media Marketing",
+    "company": "Great Learning",
+    "issuedOn": "December 2023",
+    "skills": ["Social Media Marketing"],
+    "link": ""
+  },
+  {
+    "name": "Introduction to Ethical Hacking",
+    "company": "Great Learning",
+    "issuedOn": "July 2023",
+    "skills": ["Cybersecurity", "Ethical Hacking"],
+    "link": ""
+  },
+  {
+    "name": "Python Internship",
+    "company": "upSkill Campus",
+    "issuedOn": "July 2023",
+    "skills": ["Python"],
+    "link": ""
+  },
+  {
+    "name": "Endpoint Security",
+    "company": "Cisco",
+    "issuedOn": "June 2023",
+    "skills": ["Anti-Malware Protection", "Linux Basics", "Endpoint Security"],
+    "link": ""
+  },
+  {
+    "name": "Introduction to Cybersecurity",
+    "company": "Cisco",
+    "issuedOn": "June 2023",
+    "skills": ["Cybersecurity"],
+    "link": ""
+  },
+  {
+    "name": "Networking Basics",
+    "company": "Cisco",
+    "issuedOn": "June 2023",
+    "skills": ["Networking"],
+    "link": ""
+  },
+  {
+    "name": "Python Basic Certification",
+    "company": "HackerRank",
+    "issuedOn": "March 2023",
+    "skills": ["Python"],
+    "link": ""
+  },
+  {
+    "name": "Data Analysis with Python",
+    "company": "freeCodeCamp",
+    "issuedOn": "September 2021",
+    "skills": ["Python", "Data Analysis"],
+    "link": ""
+  },
+  {
+    "name": "Fundamentals of Digital Marketing",
+    "company": "Google Digital Garage",
+    "issuedOn": "August 2021",
+    "skills": ["Digital Marketing"],
+    "link": ""
+  },
+  {
+    "name": "Google Analytics Certification",
+    "company": "Google Digital Academy (Skillshop)",
+    "issuedOn": "June 2023",
+    "skills": ["Google Analytics"],
+    "link": ""
+  }
+]
