@@ -2,11 +2,13 @@ import { Fragment, ReactNode } from 'react';
 import MainLayout from '../../components/layouts/main-layout';
 import ScrollProgressBar from './scroll-progress-bar';
 
-export default function Layout({ children }: { children: ReactNode }) {
+export default function Layout({ children }: { children: React.ReactNode }) {
   return (
-    <Fragment>
-      <ScrollProgressBar />
-      <MainLayout>{children}</MainLayout>
-    </Fragment>
+    <div className="container mx-auto p-4">
+      <header className="mb-6">
+        <h1 className="text-2xl">Certification Details</h1>
+      </header>
+      {children}
+    </div>
   );
 }
