@@ -8,7 +8,7 @@ export const metadata = {
 };
 
 export default function Page() {
-  const posts = getBlogPosts();
+  const posts = getBlogPosts(); // This will now include both blog posts and certifications
 
   return (
     <MainLayout>
