@@ -1,30 +1,25 @@
-import { formatDate, getPostFromSlug } from '../utils';
-import PageTitle from './page-title';
+import { useEffect } from 'react';
+import certifications from '../utils/certifications.json';
 
-export async function generateMetadata(props: { params: Promise<{ slug: string }> }) {
-  const params = await props.params;
-  const { metadata } = await getPostFromSlug(params.slug);
+export default function CertificationPage({ params }: { params: { slug: string } }) {
+  const certification = certifications.find((cert) => cert.slug === params.slug);
 
-  return {
-    title: metadata.title,
-    description: metadata.summary,
-  };
-}
-
-export default async function Blog(props: { params: Promise<{ slug: string }> }) {
-  const params = await props.params;
-
-  const { metadata, content } = await getPostFromSlug(params.slug);
+  if (!certification) {
+    return <div>Certification not found.</div>;
+  }
 
   return (
-    <section>
-      <PageTitle>{metadata.title}</PageTitle>
-      <div className="flex justify-between items-center mt-2 mb-8 text-sm">
-        <p className="text-sm text-neutral-600 dark:text-neutral-400">
-          {formatDate(metadata.publishedAt)}
-        </p>
-      </div>
-      <article className="prose md:max-w-5xl">{content}</article>
-    </section>
+    <main>
+      <h1>{certification.title}</h1>
+      <p>{certification.description}</p>
+      <ul>
+        {certification.skills.map((skill) => (
+          <li key={skill}>{skill}</li>
+        ))}
+      </ul>
+      <a href={certification.link} target="_blank" rel="noopener noreferrer">
+        View Certification
+      </a>
+    </main>
   );
 }
