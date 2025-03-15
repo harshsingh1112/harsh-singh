@@ -25,7 +25,7 @@ export default function Hero() {
   return (
     <div>
       <h1 className="sr-only">
-        Hello I&apos;m Harsh Singh, I&apos;m a data scientist, and I love uncovering insights and solving problems through data.
+        Hello I&apos;m Harsh Singh, I&apos;m a business analyst, and I love extracting insights and solving business challenges through data.
       </h1>
       <div className="relative z-10 flex h-[calc(100vh-81px)] items-center md:h-[calc(100vh-116px)]">
         <div className="mx-auto w-screen max-w-3xl px-4 sm:px-9 xl:max-w-5xl xl:px-0">
@@ -35,7 +35,7 @@ export default function Hero() {
                 Harsh Singh
               </h1>
               <h2 className="text-3xl font-medium opacity-80 sm:text-6xl md:text-6xl xl:text-7xl">
-                Working towards being a Data Scientist.
+                Working towards being a Business Analyst.
               </h2>
               <Link
                 href="/about"
