@@ -1,6 +1,3 @@
-import { formatDate, getPostFromSlug } from '../utils';
-import PageTitle from './page-title';
-import { useEffect } from 'react';
 import certifications from 'app/blog/certifications.json';
 
 export default function CertificationPage({ params }: { params: { slug: string } }) {
