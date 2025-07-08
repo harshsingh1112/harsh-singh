@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     template: '%s | Harsh Singh',
     default: 'Harsh Singh',
   },
-  description: 'Working towards being a Data Scientist.',
+  description: 'Working towards being a ML Engineer.',
   metadataBase: new URL('https://harsh-singh.vercel.app/'),
 };
 
