@@ -1,4 +1,4 @@
-import certifications from '../utils/certifications.json';
+import certifications from 'app/blog/certifications.json';
 
 const CertificationsPage = () => {
   return (
