@@ -1,5 +1,5 @@
 import { formatDate, getPostFromSlug } from '../utils';
-import PageTitle from './page-title';
+import PageTitle from './PageTitle';
 
 export async function generateMetadata(props: { params: Promise<{ slug: string }> }) {
   const params = await props.params;
