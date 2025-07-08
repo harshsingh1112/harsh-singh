@@ -5,7 +5,7 @@ const ResumeLink: React.FC = () => {
   return (
     <div className={styles.resumeLinkContainer}>
       <a
-        href="https://drive.google.com/file/d/1m_M-OAivyVGhphPNLTImkP2oFi6F75fm/view?usp=sharing"
+        href="https://drive.google.com/file/d/1m4fhCcTWa_TwAFlQNddISnJ4UMnTMQfE/view?usp=sharing"
         target="_blank"
         rel="noopener noreferrer"
         className={styles.resumeLink}  // Apply the class from the CSS module
