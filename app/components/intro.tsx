@@ -46,19 +46,19 @@ export default function Intro() {
       <div className="mx-auto flex min-h-screen max-w-5xl flex-col items-center justify-center px-10 py-24 text-4xl font-semibold tracking-tight md:py-28 md:text-6xl lg:px-20 lg:py-3 lg:text-7xl">
         <div className="leading-[1.15]">
           <div className="introText" style={{ opacity: opacityForBlock(progress, 0) }}>
-            Passionate about leveraging code to analyze data and drive business solutions.
+            Leveraging AI and ML to analyze data and deliver impactful solutions.
           </div>
           <span
             className="introText inline-block after:content-['_']"
             style={{ opacity: opacityForBlock(progress, 1) }}
           >
-            I am learning more skills to build the best experiences.
+           Extracting insights and building models to solve complex AI challenges 
           </span>
           <span
             className="introText inline-block"
             style={{ opacity: opacityForBlock(progress, 2) }}
           >
-            I&apos;m passionate about deriving insights from data, building models, and solving business problems.
+            I&apos;m continuously learning advanced AI/ML techniques to build intelligent systems.
           </span>
         </div>
       </div>
