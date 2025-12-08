@@ -7,11 +7,9 @@ import {
   HiOutlineDocumentAdd,
   HiOutlineDocumentDuplicate,
   HiOutlineHome,
-  HiOutlinePencil,
   HiOutlineUser,
 } from 'react-icons/hi';
 import { TbBolt, TbBoltOff } from 'react-icons/tb';
-import { getBlogPosts } from '../../blog/utils';
 
 type PaletteOption = {
   id: string;
@@ -23,7 +21,6 @@ type PaletteOption = {
 export default function usePaletteOptions() {
   const router = useRouter();
   const { theme, setTheme } = useTheme();
-  const posts = getBlogPosts();
 
   const generalOptions: PaletteOption[] = [
     {
@@ -48,12 +45,6 @@ export default function usePaletteOptions() {
       onSelect: (v) => router.push(v),
     },
     {
-      id: '/blog',
-      name: 'Blog',
-      icon: <HiOutlinePencil />,
-      onSelect: (v) => router.push(v),
-    },
-    {
       id: '/about',
       name: 'About',
       icon: <HiOutlineUser />,
@@ -67,11 +58,8 @@ export default function usePaletteOptions() {
     },
   ];
 
-  const blogOptions: PaletteOption[] = posts.map((post) => ({
-    id: post.slug,
-    name: post.metadata.title,
-    onSelect: (slug) => router.push(`/blog/${slug}`),
-  }));
+  // Blog removed from the site → no blog options
+  const blogOptions: PaletteOption[] = [];
 
   return { pageOptions, blogOptions, generalOptions };
 }
