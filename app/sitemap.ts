@@ -1,13 +1,12 @@
-// app/sitemap.ts
-import type { MetadataRoute } from 'next';
-
-const baseUrl = 'https://harsh-singh.vercel.app';
+import type { MetadataRoute } from "next";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const routes = ['', '/blog', '/projects', '/about', '/experience'];
+  const baseUrl = "https://harsh-singh.vercel.app";
 
-  return routes.map((route) => ({
-    url: `${baseUrl}${route}`,
+  const routes = ["", "projects", "about", "experience"].map((route) => ({
+    url: `${baseUrl}/${route}`,
     lastModified: new Date(),
   }));
+
+  return routes;
 }
