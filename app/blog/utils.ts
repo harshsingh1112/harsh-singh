@@ -24,6 +24,7 @@ export function getBlogPosts(): BlogPost[] {
  * Kept only so any existing imports don't break.
  * It doesn't actually read anything right now.
  */
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 export function readMDXFile(
   _filePath: string,
 ): { metadata: Metadata; content: string } {
