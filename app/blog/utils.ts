@@ -21,25 +21,6 @@ export function getBlogPosts(): BlogPost[] {
 }
 
 /**
- * Kept only so any existing imports don't break.
- * It doesn't actually read anything right now.
- */
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
-export function readMDXFile(
-  _filePath: string,
-): { metadata: Metadata; content: string } {
-  return {
-    metadata: {
-      title: 'Untitled',
-      publishedAt: new Date().toISOString(),
-      summary: '',
-      draft: false,
-    },
-    content: '',
-  };
-}
-
-/**
  * Safe date formatter if anything still calls it.
  */
 export function formatDate(date: string): string {
