@@ -15,12 +15,5 @@ export const metadata = {
 };
 
 export default function Page() {
-  return (
-    <Fragment>
-      <Occupation />
-      <CustomMDX source={content} />
-      <Resume />
-      <GithubContributions />
-    </Fragment>
-  );
+  return (  );
 }
