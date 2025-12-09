@@ -16,14 +16,14 @@ export default function Contact() {
   };
 
   interface SocialItem {
-    name: string;
-    icon: any;
-    href: string;
-    username: string;
-    color: string;
-    image?: string;
-    buttonClassName?: string;
-  }
+  name: string;
+  icon: LucideIcon;
+  href: string;
+  username: string;
+  color: string;
+  image?: string;
+  buttonClassName?: string;
+}
 
   const socials: SocialItem[] = [
     { name: 'LinkedIn', icon: Linkedin, href: 'https://www.linkedin.com/in/harshsingh11/', username: '@harshsingh11', color: 'text-blue-500', image: 'linkedin-preview.png', buttonClassName: 'bg-blue-600' },
