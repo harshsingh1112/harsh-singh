@@ -1,8 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { Github, Instagram, Linkedin, Twitter } from 'lucide-react';
-import Link from 'next/link';
+import { Github, Instagram, Linkedin, Twitter, type LucideIcon } from 'lucide-react';
 import { useState } from 'react';
 import SocialPreview from './contact/SocialPreview';
 
