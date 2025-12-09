@@ -14,7 +14,7 @@ export default function NeuralBackground() {
 
         let particles: Particle[] = [];
         let animationFrameId: number;
-        let mouse = { x: -1000, y: -1000 };
+        const mouse = { x: -1000, y: -1000 };
         let isDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
 
         // Configuration
