@@ -34,7 +34,7 @@ export default function Hero() {
                 Harsh Singh
               </h1>
               <h2 className="text-2xl font-medium opacity-80 sm:text-5xl md:text-5xl xl:text-6xl">
-                On my way to becoming an AI Engineer, focused on learning and building.
+                Exploring the intersection of AI and Fintech 
               </h2>
             </div>
             <motion.div
