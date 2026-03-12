@@ -42,7 +42,7 @@ export default function AboutHero() {
 
                 <div className="space-y-4 text-lg text-gray-600 dark:text-gray-300">
                     <p>
-                        I'm <span className="font-semibold text-gray-900 dark:text-white">Harsh Singh</span>. 
+                        I&apos;m <span className="font-semibold text-gray-900 dark:text-white">Harsh Singh</span>. 
                         A CS undergrad with a foundation in AI and machine learning, currently exploring the fintech world as a Consultant at HighRadius working within Order-to-Cash and understanding how technology drives financial operations at scale.
                     </p>
                     <p>
