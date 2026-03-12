@@ -78,5 +78,6 @@ export const components = {
 };
 
 export function CustomMDX(props: MDXRemoteProps) {
-  return <MDXRemote {...props} components={{ ...components, ...(props.components || {}) }} />;
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  return <MDXRemote {...props} components={{ ...components, ...(props.components || {}) } as any} />;
 }
