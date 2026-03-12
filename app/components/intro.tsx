@@ -52,7 +52,7 @@ export default function Intro() {
       <div className="relative z-10 mx-auto flex min-h-screen max-w-5xl flex-col items-center justify-center px-10 py-24 text-4xl font-semibold tracking-tight md:py-28 md:text-6xl lg:px-20 lg:py-3 lg:text-7xl">
         <div className="leading-[1.15]">
           <div className="introText" style={{ opacity: opacityForBlock(progress, 0) }}>
-            Leveraging AI and ML to analyze data and deliver impactful solutions.
+            From code to collections - exploring fintech from the inside
           </div>
         </div>
       </div>

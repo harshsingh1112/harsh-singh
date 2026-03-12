@@ -42,12 +42,11 @@ export default function AboutHero() {
 
                 <div className="space-y-4 text-lg text-gray-600 dark:text-gray-300">
                     <p>
-                        I’m <span className="font-semibold text-gray-900 dark:text-white">Harsh Singh</span>.
-                        I build practical AI systems and create content that simplifies complex ideas.
+                        I'm <span className="font-semibold text-gray-900 dark:text-white">Harsh Singh</span>. 
+                        A CS undergrad with a foundation in AI and machine learning, currently exploring the fintech world as a Consultant at HighRadius working within Order-to-Cash and understanding how technology drives financial operations at scale.
                     </p>
                     <p>
-                        I enjoy working with models, refining prompts, and turning data into useful products.
-                        I also love producing clean, engaging content that connects with people and adds real value.
+                        I enjoy building with data, experimenting with models, and finding where tech creates real business impact.
                     </p>
                 </div>
 
@@ -58,6 +57,12 @@ export default function AboutHero() {
                     </div>
                     <div className="rounded-full bg-purple-100 px-4 py-2 text-sm font-semibold text-purple-700 dark:bg-purple-900/30 dark:text-purple-300">
                         Content Creator
+                    </div>
+                    <div className="rounded-full bg-green-100 px-4 py-2 text-sm font-semibold text-green-700 dark:bg-green-900/30 dark:text-green-300">
+                        Fintech Enthusiast
+                    </div>
+                    <div className="rounded-full bg-yellow-100 px-4 py-2 text-sm font-semibold text-yellow-700 dark:bg-yellow-900/30 dark:text-yellow-300">
+                        Order-to-Cash
                     </div>
                 </div>
             </motion.div>

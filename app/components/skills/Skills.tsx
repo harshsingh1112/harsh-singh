@@ -40,6 +40,10 @@ const skillCategories: SkillCategory[] = [
         title: 'Sales / Business',
         skills: ['Lead outreach and follow-ups', 'Negotiation', 'Customer relationship management', 'Presenting and explaining ideas'],
     },
+    {
+        title: 'Financial Technology',
+        skills: ['Order-to-Cash (O2C)', 'Accounts Receivable', 'Collections Management', 'DSO', 'CEI', 'Aging Reports', 'KPI Reporting', 'ERP Systems'],
+    },
 ];
 
 export default function Skills() {

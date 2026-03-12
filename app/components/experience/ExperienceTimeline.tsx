@@ -5,11 +5,24 @@ import React, { useState } from 'react';
 
 const experiences = [
     {
+        company: 'HighRadius',
+        role: 'Consultant Intern',
+        location: 'Hyderabad',
+        period: 'Jan 2026 - Present',
+        isCurrent: true,
+        details: [
+            'Monitoring and analyzing outstanding accounts receivable, tracking overdue invoices and prioritizing collection efforts using aging reports.',
+            'Working within the Order-to-Cash domain to understand how AI-powered financial operations and ERP-integrated workflows function at scale.',
+            'Building and interpreting collection performance reports tracking KPIs such as DSO, CEI, and bad debt ratios to identify payment trends.',
+            'Exploring the end-to-end collections process, from invoice generation to payment reconciliation, within a live enterprise environment.',
+        ],
+    },
+    {
         company: 'Janasys Technologies',
         role: 'Intern',
         location: 'Dubai',
         period: 'Dec 2025 - Jan 2025',
-        isCurrent: true,
+        isCurrent: false,
         details: [
             'Learned how enterprise servers and workstations are configured and assembled.',
             'Worked with components such as CPUs, memory, cooling systems, heatsinks, and ports based on client requirements.',
